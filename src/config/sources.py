@@ -1,68 +1,39 @@
+# Centralized sources: RSS for news/social/other. No keys!
+# Twitter: Via RSS.app (free RSS from Twitter users/searches)
+# Reddit: Native RSS
+# Format: {country: {source_type: {category: 'url'}}}
+
 sources = {
     'us': {
-        'web': {
+        'web': {  # CNN RSS
             'general': 'http://rss.cnn.com/rss/cnn_topstories.rss',
             'technology': 'http://rss.cnn.com/rss/edition_technology.rss',
             'sports': 'http://rss.cnn.com/rss/cnn_sport.rss',
             'business': 'http://rss.cnn.com/rss/money_latest.rss',
             'health': 'http://rss.cnn.com/rss/cnn_health.rss',
-            'culture': 'http://rss.cnn.com/rss/cnn_culture.rss',
-            'entertainment': 'http://rss.cnn.com/rss/cnn_showbiz.rss',
-            'music': 'http://rss.cnn.com/rss/cnn_music.rss',
-            'news': 'http://rss.cnn.com/rss/cnn_world.rss',
-            'politics': 'http://rss.cnn.com/rss/cnn_allpolitics.rss',
-            'science': 'http://rss.cnn.com/rss/cnn_space.rss',
-            'worldnews': 'http://rss.cnn.com/rss/cnn_world.rss',
-            'other': 'http://rss.cnn.com/rss/cnn_topstories.rss',
         },
-        'twitter': {  
-            'general': 'https://rss.app/feeds/twitter/CNN.xml', 
-            'technology': 'https://rss.app/feeds/twitter/search.xml?q=technology%20news',
+        'twitter': {  # RSS.app for Twitter (e.g., @CNN, search "news")
+            'general': 'https://rss.app/feeds/twitter/CNN.xml',  # CNN Twitter
+            'technology': 'https://rss.app/feeds/twitter/search.xml?q=technology%20news',  # Search
             'sports': 'https://rss.app/feeds/twitter/ESPN.xml',
             'business': 'https://rss.app/feeds/twitter/search.xml?q=business%20news',
             'health': 'https://rss.app/feeds/twitter/search.xml?q=health%20news',
-            'politics': 'https://rss.app/feeds/twitter/search.xml?q=politics%20news',
-            'science': 'https://rss.app/feeds/twitter/search.xml?q=science%20news',
-            'worldnews': 'https://rss.app/feeds/twitter/search.xml?q=worldnews%20news',
-            'other': 'https://rss.app/feeds/twitter/search.xml?q=unitedstates%20news',
-            'culture': 'https://rss.app/feeds/twitter/search.xml?q=unitedstatesculture%20news',
-            'entertainment': 'https://rss.app/feeds/twitter/search.xml?q=unitedstatesentertainment%20news',
-            'music': 'https://rss.app/feeds/twitter/search.xml?q=unitedstatesmusic%20news',
-            'news': 'https://rss.app/feeds/twitter/search.xml?q=unitedstatesnews%20news',
-            'politics': 'https://rss.app/feeds/twitter/search.xml?q=unitedstatespolitics%20news',
-            'science': 'https://rss.app/feeds/twitter/search.xml?q=unitedstatesscience%20news',
         },
-        'reddit': { 
+        'reddit': {  # r/ subreddits
             'general': 'https://www.reddit.com/r/news/.rss',
             'technology': 'https://www.reddit.com/r/technology/.rss',
             'sports': 'https://www.reddit.com/r/sports/.rss',
             'business': 'https://www.reddit.com/r/business/.rss',
             'health': 'https://www.reddit.com/r/health/.rss',
-            'politics': 'https://www.reddit.com/r/politics/.rss',
-            'science': 'https://www.reddit.com/r/science/.rss',
-            'worldnews': 'https://www.reddit.com/r/worldnews/.rss',
-            'other': 'https://www.reddit.com/r/unitedstates/.rss',
-            'culture': 'https://www.reddit.com/r/unitedstatesculture/.rss',
-            'entertainment': 'https://www.reddit.com/r/unitedstatesentertainment/.rss',
-            'music': 'https://www.reddit.com/r/unitedstatesmusic/.rss',
-            'news': 'https://www.reddit.com/r/unitedstatesnews/.rss',
-            'politics': 'https://www.reddit.com/r/unitedstatespolitics/.rss',
-            'science': 'https://www.reddit.com/r/unitedstatesscience/.rss',
         }
     },
     'uk': {
-        'web': { 
+        'web': {  # BBC RSS
             'general': 'http://feeds.bbci.co.uk/news/rss.xml',
             'technology': 'http://feeds.bbci.co.uk/news/technology/rss.xml',
             'sports': 'http://feeds.bbci.co.uk/sport/rss.xml',
             'business': 'http://feeds.bbci.co.uk/news/business/rss.xml',
             'health': 'http://feeds.bbci.co.uk/news/health/rss.xml',
-            'culture': 'http://feeds.bbci.co.uk/news/culture/rss.xml',
-            'entertainment': 'http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml',
-            'music': 'http://feeds.bbci.co.uk/news/music/rss.xml',
-            'news': 'http://feeds.bbci.co.uk/news/newsbeat/rss.xml',
-            'politics': 'http://feeds.bbci.co.uk/news/politics/rss.xml',
-            'science': 'http://feeds.bbci.co.uk/news/science_and_environment/rss.xml',
         },
         'twitter': {
             'general': 'https://rss.app/feeds/twitter/BBCBreaking.xml',
@@ -70,84 +41,27 @@ sources = {
             'sports': 'https://rss.app/feeds/twitter/BBC_Sport.xml',
             'business': 'https://rss.app/feeds/twitter/search.xml?q=business%20uk',
             'health': 'https://rss.app/feeds/twitter/search.xml?q=health%20uk',
-            'technology': 'https://rss.app/feeds/twitter/search.xml?q=technology%20uk',
-            'culture': 'https://rss.app/feeds/twitter/search.xml?q=culture%20uk',
-            'entertainment': 'https://rss.app/feeds/twitter/search.xml?q=entertainment%20uk',
-            'music': 'https://rss.app/feeds/twitter/search.xml?q=music%20uk',
-            'news': 'https://rss.app/feeds/twitter/search.xml?q=news%20uk',
-            'politics': 'https://rss.app/feeds/twitter/search.xml?q=politics%20uk',
-            'science': 'https://rss.app/feeds/twitter/search.xml?q=science%20uk',
         },
-        'reddit': { 
+        'reddit': {  # Same as US (global subs)
             'general': 'https://www.reddit.com/r/news/.rss',
             'technology': 'https://www.reddit.com/r/technology/.rss',
             'sports': 'https://www.reddit.com/r/sports/.rss',
             'business': 'https://www.reddit.com/r/business/.rss',
             'health': 'https://www.reddit.com/r/health/.rss',
-            'other': 'https://www.reddit.com/r/unitedkingdom/.rss',
-            'culture': 'https://www.reddit.com/r/unitedkingdomculture/.rss',
-            'entertainment': 'https://www.reddit.com/r/unitedkingdomentertainment/.rss',
-            'music': 'https://www.reddit.com/r/unitedkingdommusic/.rss',
-            'news': 'https://www.reddit.com/r/unitedkingdomnews/.rss',
-            'politics': 'https://www.reddit.com/r/unitedkingdompolitics/.rss',
-            'science': 'https://www.reddit.com/r/unitedkingdomscience/.rss',
         }
     },
-    'et': { 
-        'web': {  
-            'general': 'https://addisstandard.com/feed/', 
-            'news': 'https://addisstandard.com/category/news/',
-            'sports': 'https://addisstandard.com/category/sports/',
-            'business': 'https://addisstandard.com/category/business/',
-            'health': 'https://addisstandard.com/category/health/',
-            'technology': 'https://addisstandard.com/category/technology/',
-            'education': 'https://addisstandard.com/category/education/',
-            'culture': 'https://addisstandard.com/category/culture/',
-            'entertainment': 'https://addisstandard.com/category/entertainment/',
-            'music': 'https://addisstandard.com/category/music/',
-            'politics': 'https://addisstandard.com/category/politics/',
-            'science': 'https://addisstandard.com/category/science/',
+    'et': {  # NEW: Ethiopia (YouTube focus + basic Web)
+        'web': {  # Addis Standard RSS (English/Amharic news)
+            'general': 'https://addisstandard.com/feed/',  # General Ethiopian news
         },
-        'youtube': {
+        'youtube': {  # EBC (official broadcaster)
             'general': 'https://www.youtube.com/feeds/videos.xml?channel_id=UCOhrz3uRCOHmK6ueUstw7_Q',  # EBC
-            'news': 'https://www.youtube.com/feeds/videos.xml?channel_id=UCOhrz3uRCOHmK6ueUstw7_Q',
-            'sports': 'https://www.youtube.com/feeds/videos.xml?channel_id=UCOhrz3uRCOHmK6ueUstw7_Q',
-            'music': 'https://www.youtube.com/feeds/videos.xml?channel_id=UCOhrz3uRCOHmK6ueUstw7_Q',
-            'entertainment': 'https://www.youtube.com/feeds/videos.xml?channel_id=UCOhrz3uRCOHmK6ueUstw7_Q',
-            'business': 'https://www.youtube.com/feeds/videos.xml?channel_id=UCOhrz3uRCOHmK6ueUstw7_Q',
-            'health': 'https://www.youtube.com/feeds/videos.xml?channel_id=UCOhrz3uRCOHmK6ueUstw7_Q',
-            'technology': 'https://www.youtube.com/feeds/videos.xml?channel_id=UCOhrz3uRCOHmK6ueUstw7_Q',
-            'education': 'https://www.youtube.com/feeds/videos.xml?channel_id=UCOhrz3uRCOHmK6ueUstw7_Q',
-            'culture': 'https://www.youtube.com/feeds/videos.xml?channel_id=UCOhrz3uRCOHmK6ueUstw7_Q',
         },
         'twitter': {
-            'general': 'https://rss.app/feeds/twitter/search.xml?q=Ethiopia%20news',
-            'sports': 'https://rss.app/feeds/twitter/search.xml?q=Ethiopia%20sports',
-            'business': 'https://rss.app/feeds/twitter/search.xml?q=Ethiopia%20business',
-            'health': 'https://rss.app/feeds/twitter/search.xml?q=Ethiopia
-            'technology': 'https://rss.app/feeds/twitter/search.xml?q=Ethiopia%20technology',
-            'education': 'https://rss.app/feeds/twitter/search.xml?q=Ethiopia%20education',
-            'culture': 'https://rss.app/feeds/twitter/search.xml?q=Ethiopia%20culture',
-            'entertainment': 'https://rss.app/feeds/twitter/search.xml?q=Ethiopia%20entertainment',
-            'music': 'https://rss.app/feeds/twitter/search.xml?q=Ethiopia%20music',
-            'news': 'https://rss.app/feeds/twitter/search.xml?q=Ethiopia%20news',
-            'politics': 'https://rss.app/feeds/twitter/search.xml?q=Ethiopia%20politics',
-            'science': 'https://rss.app/feeds/twitter/search.xml?q=Ethiopia%20science',
+            'general': 'https://rss.app/feeds/twitter/search.xml?q=Ethiopia%20news',  # Search-based
         },
         'reddit': {
-            'general': 'https://www.reddit.com/r/Ethiopia/.rss',
-            'technology': 'https://www.reddit.com/r/EthiopiaTechnology/.rss',
-            'sports': 'https://www.reddit.com/r/EthiopiaSports/.rss',
-            'business': 'https://www.reddit.com/r/EthiopiaBusiness/.rss',
-            'health': 'https://www.reddit.com/r/EthiopiaHealth/.rss',
-            'culture': 'https://www.reddit.com/r/EthiopiaCulture/.rss',
-            'entertainment': 'https://www.reddit.com/r/EthiopiaEntertainment/.rss',
-            'music': 'https://www.reddit.com/r/EthiopiaMusic/.rss',
-            'news': 'https://www.reddit.com/r/EthiopiaNews/.rss',
-            'politics': 'https://www.reddit.com/r/EthiopiaPolitics/.rss',
-            'science': 'https://www.reddit.com/r/EthiopiaScience/.rss',
-            'education': 'https://www.reddit.com/r/EthiopiaEducation/.rss',
-            'other': 'https://www.reddit.com/r/EthiopiaOther/.rss',
+            'general': 'https://www.reddit.com/r/Ethiopia/.rss',  # r/Ethiopia
         }
     }
 }
