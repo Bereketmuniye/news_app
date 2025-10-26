@@ -1,25 +1,20 @@
-# Centralized sources: RSS for news/social/other. No keys!
-# Twitter: Via RSS.app (free RSS from Twitter users/searches)
-# Reddit: Native RSS
-# Format: {country: {source_type: {category: 'url'}}}
-
 sources = {
     'us': {
-        'web': {  # CNN RSS
+        'web': {
             'general': 'http://rss.cnn.com/rss/cnn_topstories.rss',
             'technology': 'http://rss.cnn.com/rss/edition_technology.rss',
             'sports': 'http://rss.cnn.com/rss/cnn_sport.rss',
             'business': 'http://rss.cnn.com/rss/money_latest.rss',
-            'health': 'http://rss.cnn.com/rss/cnn_health.rss',
+            'health': 'http://rss.cnn.com/rss/cnn_health/.rss',
         },
-        'twitter': {  # RSS.app for Twitter (e.g., @CNN, search "news")
-            'general': 'https://rss.app/feeds/twitter/CNN.xml',  # CNN Twitter
-            'technology': 'https://rss.app/feeds/twitter/search.xml?q=technology%20news',  # Search
-            'sports': 'https://rss.app/feeds/twitter/ESPN.xml',
-            'business': 'https://rss.app/feeds/twitter/search.xml?q=business%20news',
-            'health': 'https://rss.app/feeds/twitter/search.xml?q=health%20news',
+        'twitter': {
+            'general': 'https://twitrss.me/twitter_user_to_rss/?user=CNN',
+            'technology': 'https://twitrss.me/twitter_user_to_rss/?user=TechCrunch',
+            'sports': 'https://twitrss.me/twitter_user_to_rss/?user=ESPN',
+            'business': 'https://twitrss.me/twitter_user_to_rss/?user=WSJ',
+            'health': 'https://twitrss.me/twitter_user_to_rss/?user=WHO',
         },
-        'reddit': {  # r/ subreddits
+        'reddit': {
             'general': 'https://www.reddit.com/r/news/.rss',
             'technology': 'https://www.reddit.com/r/technology/.rss',
             'sports': 'https://www.reddit.com/r/sports/.rss',
@@ -28,7 +23,7 @@ sources = {
         }
     },
     'uk': {
-        'web': {  # BBC RSS
+        'web': {
             'general': 'http://feeds.bbci.co.uk/news/rss.xml',
             'technology': 'http://feeds.bbci.co.uk/news/technology/rss.xml',
             'sports': 'http://feeds.bbci.co.uk/sport/rss.xml',
@@ -36,13 +31,13 @@ sources = {
             'health': 'http://feeds.bbci.co.uk/news/health/rss.xml',
         },
         'twitter': {
-            'general': 'https://rss.app/feeds/twitter/BBCBreaking.xml',
-            'technology': 'https://rss.app/feeds/twitter/search.xml?q=technology%20uk',
-            'sports': 'https://rss.app/feeds/twitter/BBC_Sport.xml',
-            'business': 'https://rss.app/feeds/twitter/search.xml?q=business%20uk',
-            'health': 'https://rss.app/feeds/twitter/search.xml?q=health%20uk',
+            'general': 'https://twitrss.me/twitter_user_to_rss/?user=BBCBreaking',
+            'technology': 'https://twitrss.me/twitter_user_to_rss/?user=BBC_Tech',
+            'sports': 'https://twitrss.me/twitter_user_to_rss/?user=BBCSport',
+            'business': 'https://twitrss.me/twitter_user_to_rss/?user=BBCBusiness',
+            'health': 'https://twitrss.me/twitter_user_to_rss/?user=BBCHealth',
         },
-        'reddit': {  # Same as US (global subs)
+        'reddit': {
             'general': 'https://www.reddit.com/r/news/.rss',
             'technology': 'https://www.reddit.com/r/technology/.rss',
             'sports': 'https://www.reddit.com/r/sports/.rss',
@@ -50,18 +45,18 @@ sources = {
             'health': 'https://www.reddit.com/r/health/.rss',
         }
     },
-    'et': {  # NEW: Ethiopia (YouTube focus + basic Web)
-        'web': {  # Addis Standard RSS (English/Amharic news)
-            'general': 'https://addisstandard.com/feed/',  # General Ethiopian news
+    'et': {
+        'web': {
+            'general': 'https://addisstandard.com/feed/',
         },
-        'youtube': {  # EBC (official broadcaster)
-            'general': 'https://www.youtube.com/feeds/videos.xml?channel_id=UCOhrz3uRCOHmK6ueUstw7_Q',  # EBC
+        'youtube': {
+            'general': 'https://www.youtube.com/feeds/videos.xml?channel_id=UCOhrz3uRCOHmK6ueUstw7_Q',
         },
         'twitter': {
-            'general': 'https://rss.app/feeds/twitter/search.xml?q=Ethiopia%20news',  # Search-based
+            'general': 'https://twitrss.me/twitter_user_to_rss/?user=ethiopianews',
         },
         'reddit': {
-            'general': 'https://www.reddit.com/r/Ethiopia/.rss',  # r/Ethiopia
+            'general': 'https://www.reddit.com/r/Ethiopia/.rss',
         }
     }
 }
