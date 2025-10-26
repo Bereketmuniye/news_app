@@ -12,7 +12,7 @@ def fetch_rss(url: str) -> Optional[List[Dict[str, str]]]:
         feed = feedparser.parse(url)
         if feed.entries:
             articles = []
-            for entry in feed.entries[:5]:
+            for entry in feed.entries[:20]:
                 title = entry.get('title', 'No title')
                 link = entry.get('link', '')
                 image = None
