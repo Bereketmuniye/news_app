@@ -1,0 +1,40 @@
+# Python virtual environment
+venv/
+env/
+.venv/
+
+# Environment variables (secrets!)
+.env
+
+# Python bytecode & caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE/Editor files
+.idea/          # PyCharm
+.vscode/        # VS Code
+*.swp
+*.swo
+
+# OS-specific
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+# Logs & temp
+*.log
+logs/
+
+# Deployment (if any)
+.railway/       # Railway temp files
+.render/        # Render temp files
+
+# Testing (if added later)
+.pytest_cache/
+coverage.xml
+.coverage
+htmlcov/
